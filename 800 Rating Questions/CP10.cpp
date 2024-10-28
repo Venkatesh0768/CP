@@ -1,48 +1,44 @@
 #include <iostream>
 using namespace std;
 
-//border arr print
-
-void sprial(char arr[10][10] , int n , int m){
-    for (char i = 0; i <10; i++)
-    {
-        cout<<arr[0][i] << " ";
-    }
-
-
-    cout<<"\n";
-
-    for (int i = 1; n>i; i--)
-    {
-        cout<<arr[n][m-1] << " ";
-    }
-    
-    
-}
-
 int main()
 {
-    int t; cin>>t;
+    int t;
+    cin >> t;
+    int border[10][10] = {
+        {1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
+        {1, 2, 2, 2, 2, 2, 2, 2, 2, 1},
+        {1, 2, 3, 3, 3, 3, 3, 3, 2, 1},
+        {1, 2, 3, 4, 4, 4, 4, 3, 2, 1},
+        {1, 2, 3, 4, 5, 5, 4, 3, 2, 1},
+        {1, 2, 3, 4, 5, 5, 4, 3, 2, 1},
+        {1, 2, 3, 4, 4, 4, 4, 3, 2, 1},
+        {1, 2, 3, 3, 3, 3, 3, 3, 2, 1},
+        {1, 2, 2, 2, 2, 2, 2, 2, 2, 1},
+        {1, 1, 1, 1, 1, 1, 1, 1, 1, 1}};
 
-    while (t>0)
-    {   
-        int n; cin>>n;
-        int m; cin>>m;
+    while (t > 0)
+    {
 
-        char arr[n][m];
-        for(char i =0;i<n; i++){
-            for (char j = 0; j<m; j++)
+        char arr[10][10];
+        int totalSum =0;
+        for (char i = 0; i < 10; i++)
+        {
+            for (char j = 0; j < 10; j++)
             {
-                cin>>arr[i][j];
+                cin >> arr[i][j];
+
+                if (arr[i][j] == 'X')
+                {
+                    totalSum += border[i][j];
+                }
             }
-            
         }
 
-        sprial(arr, n, m);        
-        
-       t--;
+        cout<<totalSum << endl;
+
+        t--;
     }
-    
- 
+
     return 0;
 }
