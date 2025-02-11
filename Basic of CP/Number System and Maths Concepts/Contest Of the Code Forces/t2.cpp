@@ -1,33 +1,29 @@
 #include <iostream>
 using namespace std;
 
-void solve() {
+void solve()
+{
     string s;
     cin >> s;
 
-    int n = s.size();
-
-    int flag = 1; 
-    for (int i = 1; i < s.length(); i++) {
-        if (s[i] == s[i - 1]) {
-            flag ==1;
-            break;
+    for (int i = 0; i < s.length() - 1; i++)
+    {
+        if (s[i] == s[i + 1])
+        {
+            cout << "1" << endl;
+            return;
         }
     }
 
-    if (flag)
-    {
-        cout<<"1"<<endl;
-    }else{
-        cout<<n<<endl;
-    }
-    
+    cout << s.length() << endl;
 }
 
-int main() {
+int main()
+{
     int t;
     cin >> t;
-    while (t--) {
+    while (t--)
+    {
         solve();
     }
     return 0;
