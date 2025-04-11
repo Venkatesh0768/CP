@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"f:\\CP\\800 Rating Questions\\Revision\\A. United We Stand.cpp","tests":[{"id":1740472107722,"input":"1\n5\n1 2 3 4 5\n","output":"3 2\n1 3 5 \n2 4 \n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\CP\\800 Rating Questions\\Revision\\A. United We Stand.cpp","group":"local","local":true}

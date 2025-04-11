@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"f:\\CP\\800 Rating Questions\\A. Buttons.cpp","tests":[{"id":1740476396988,"input":"6\n1 1 1\n9 3 3\n1 2 3\n6 6 9\n2 2 8\n1 2 1\n\n","output":"First\nFirst\nSecond\nFirst\nSecond\nSecond"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\CP\\800 Rating Questions\\A. Buttons.cpp","group":"local","local":true}

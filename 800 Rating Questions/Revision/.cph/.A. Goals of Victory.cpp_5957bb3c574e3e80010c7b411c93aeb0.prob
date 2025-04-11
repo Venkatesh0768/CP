@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"f:\\CP\\800 Rating Questions\\Revision\\A. Goals of Victory.cpp","tests":[{"id":1740066302296,"input":"2\n4\n3 -4 5\n11\n-30 12 -57 7 0 -81 -68 41 -89 0\n","output":"-4\n265\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\CP\\800 Rating Questions\\Revision\\A. Goals of Victory.cpp","group":"local","local":true}
